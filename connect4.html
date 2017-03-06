@@ -7,11 +7,36 @@
       font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
       font-size: 10px;
     }
+    .board {
+      text-align: center;
+      display: flex;                       /* establish flex container */
+      flex-wrap: wrap;                     /* enable flex items to wrap */
+      justify-content: flex-start;
+    }
+    .board .column {
+      flex: 0 0 5em;                       /* don't grow, don't shrink, width */
+      margin-bottom: 5px;
+      background-color: #efefef;
+    }
+    .board .slot {
+      width: 5em;
+      height: 5em;
+    }
+    .value {
+      padding: 1em;
+      width: 2em;
+      height: 2em;
+      margin: 0.25em auto;
+      border-radius: 4em;
+      color: white;
+    }
+    .player-0 { background-color: white; }
+    .player-1 { background-color: red; }
+    .player--1 { background-color: blue; }
   </style>
 </head>
 <body>
   <h1>Connect4</h1>
-  <p>Coming...</p>
   <script src="build/connect4.js"></script>
 </body>
 </html>

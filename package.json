@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Minimax algorithm",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "tictactoe": "open tictactoe.html && watchify tictactoe.js -o build/tictactoe.js",
     "connect4": "open connect4.html && watchify connect4.js -o build/connect4.js"
