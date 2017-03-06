@@ -1,0 +1,25 @@
+{
+  "name": "minimax",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Minimax algorithm",
+  "main": "index.js",
+  "scripts": {
+    "tictactoe": "open tictactoe.html && watchify tictactoe.js -o build/tictactoe.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/minimax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danigb/minimax/issues"
+  },
+  "homepage": "https://github.com/danigb/minimax#readme",
+  "dependencies": {
+    "hyperapp": "^0.7.0",
+    "hyperx": "^2.0.5"
+  }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Tic Tac Toe</title>
+  <style>
+    html, body {
+      font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+      font-size: 10px;
+    }
+    .main {
+      font-size: 4em;
+    }
+    .board {
+      width: 6em;
+      text-align: center;
+      display: flex;                       /* establish flex container */
+      flex-wrap: wrap;                     /* enable flex items to wrap */
+      justify-content: space-around;
+
+    }
+    .board span {
+      flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+      height: 2em;
+      margin-bottom: 5px;
+    }
+    .minimax {
+      padding: 1em 0;
+      width: 100%;
+    }
+    .minimax .board { float: left; margin-right: 1em; }
+  </style>
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+  <script src="build/tictactoe.js"></script>
+</body>
+</html>
