@@ -29,7 +29,7 @@ function set (board, x, y, val) {
 }
 
 // Return an array of { x, y } with valid moves
-function validMoves (board, player) {
+function validMoves (board) {
   return map(board, (cell, x, y) => {
     return cell === E ? { x, y } : null
   }).filter((x) => x)
@@ -60,7 +60,7 @@ function score (board) {
 
 function minimax (maximize, player, board, depth) {
   if (depth === 0) return [{ move: null, score: 0 }]
-  var moves = validMoves(board, player)
+  var moves = validMoves(board)
   var scores = moves.map(move => {
     var newBoard = set(board, move.x, move.y, player)
     var boardScore = score(newBoard)

@@ -1,6 +1,6 @@
 # Minimax
 
-> Another minimax implementation
+> Yet another minimax implementation
 
 #### What
 

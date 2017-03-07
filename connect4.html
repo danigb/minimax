@@ -30,6 +30,12 @@
       border-radius: 4em;
       color: white;
     }
+    .controls { margin: 2em 0; }
+    .alternatives { display: flex; justify-content: flex-start;}
+    .alternatives .board { margin-right: 6em; flex-wrap: nowrap; }
+    .alternatives .board .column { flex: 0 0 1.4em; }
+    .alternatives .board .slot { width: 1em; height: 1em; }
+    .alternatives .value { padding: 0.1em; width: 0.8em; height: 0.8em; }
     .player-0 { background-color: white; }
     .player-1 { background-color: red; }
     .player--1 { background-color: blue; }
@@ -37,6 +43,8 @@
 </head>
 <body>
   <h1>Connect4</h1>
+  <p>You can click over a column or the small boards to drop a disk. Bellow
+    the small boards is the calculated score by minimax algorithm.</p>
   <script src="build/connect4.js"></script>
 </body>
 </html>
